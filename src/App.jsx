@@ -142,14 +142,14 @@ export default function App() {
 
 
           {
-            koders.length === 0 && <h2 className="text-black/70 text-3xl self-center pl-[40%]">Sin koders 🙅‍♂️</h2>
+            koders.length === 0 && <h2 className="text-black/70 text-3xl self-center pl-[40%] pt-[50%]">Sin koders 🙅‍♂️</h2>
           }
 
           {
             koders.map((koder, i) => {
               return (
                 <>
-                  <div key={`koder-${i}`} className="bg-white w-[48%] h-40  justify-evenly items-center flex flex-col rounded-md ">
+                  <div key={`koder-${i}`} className="bg-white w-[48%] h-40 justify-evenly items-center flex flex-col rounded-md ">
                     <p className="select-none">{koder.name}</p>
                     <p className="select-none">{koder.lastName}</p>
                     <p className="select-none text-xs sm:text-sm">{koder.email}</p>
